@@ -1,18 +1,47 @@
 ---
-import PrimaryLayout from '../layouts/PrimaryLayout.astro'
-import FeaturedArticle from '../components/FeaturedArticle.astro'
+import PrimaryLayout from "../layouts/PrimaryLayout.astro";
+import FeaturedArticle from "../components/FeaturedArticle.astro";
+import PopularArticles from "../components/PopularArticles.astro";
 ---
 
 <PrimaryLayout>
-	<div class="three-columns">
-		<FeaturedArticle class="span-2"/>
-		<div class="inverted">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint possimus quasi voluptatum. Amet laboriosam provident blanditiis incidunt corporis, optio nihil omnis? Libero, exercitationem omnis molestias dolor nostrum perferendis ut quam?</p>
-		</div>
-	</div>
-	<!-- three-cols -->
-		<!-- featured -->
-		<!-- new -->
-	<!-- three cols -->
-		<!-- popular -->
+  <div class="three-columns section">
+    <FeaturedArticle class="span-2" />
+    <div class="inverted flow">
+      <h2 class="accent-color">New</h2>
+      <ul role="list" class="separated-list">
+        <li>
+          <article class="flow">
+            <h3><a href="#">Article 1</a></h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3><a href="#">Article 2</a></h3>
+            <p>
+              Eos eveniet aliquam ex praesentium delectus iste. 
+            </p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3><a href="#">Article 3</a></h3>
+            <p>
+              Ipsum explicabo eius mollitia harum aliquid! Rem officia
+            </p>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <PopularArticles class="three-columns section" />
+  <!-- three-cols -->
+  <!-- featured -->
+  <!-- new -->
+  <!-- three cols -->
+  <!-- popular -->
 </PrimaryLayout>
